@@ -1,11 +1,11 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:STU{date}-{####}",
  "creation": "2024-05-02 14:44:02.404248",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "profile_image",
   "first_name",
   "middle_name",
   "last_name",
@@ -16,7 +16,8 @@
   "nationality",
   "blood_group",
   "active",
-  "date"
+  "date",
+  "image"
  ],
  "fields": [
   {
@@ -77,15 +78,26 @@
    "fieldname": "date",
    "fieldtype": "Date",
    "label": "Date "
+  },
+  {
+   "fieldname": "profile_image",
+   "fieldtype": "Image",
+   "label": "Profile Image",
+   "options": "image"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-02 17:00:21.354099",
+ "modified": "2024-05-03 15:03:51.217300",
  "modified_by": "Administrator",
  "module": "My Custom App",
  "name": "Student Details",
- "naming_rule": "Expression",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
